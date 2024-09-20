@@ -1,0 +1,1 @@
+import{j as r}from"./CompanyLogo-BOpOY0gp.js";function t({src:o,alt:n,className:e}){return r.jsx("img",{src:o,draggable:"false",alt:n,style:{userSelect:"none"},className:"icon"+(e==null?"":" "+e)})}export{t as I};

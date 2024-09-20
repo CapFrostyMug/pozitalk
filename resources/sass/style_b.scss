@@ -1,0 +1,791 @@
+// CSS file for the bottom part of the design
+*{
+    list-style: none;
+}
+.design__b{
+    h3{
+        width: 100%;
+        height: 3rem;
+        font-family: Inter;
+        font-size: 24px;
+        line-height: 3rem;
+        letter-spacing: -.02em;
+        color: #191919;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    
+    
+    p{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 2.5rem;
+        letter-spacing: -0.02em;
+        color: #4d4d4d;
+    }
+    
+//HOW TO START  
+    .HTSContainer{
+        display: grid;
+        grid-template-areas: "ls ls rs"
+                             "sls srs srs";
+        grid-gap: 1.6rem;
+        .LSContent{
+            grid-area: ls;
+            position: relative;
+            .firstImg{
+                position: absolute;
+                top: 8.694rem;
+                left: 10.962rem;
+            }    
+            .LSCText{
+                display: flex;
+                flex-direction: column;
+                width: 63.2rem;
+                position: absolute;
+                top: 39.3rem;
+                left: 2rem;
+            }
+        }
+            
+            
+        .RSContent{
+            grid-area: rs;
+            position: relative;
+            .secondImg{
+                position: absolute;
+                top: 7.397rem;
+                left: 0;
+            }
+            .RSCText{
+                display: flex;
+                flex-direction: column;
+                width: 37.6rem;
+                position: absolute;
+                top: 36.7rem;
+                left: 2rem
+            }
+        }
+        .SLSContent{
+            grid-area: sls;
+            position: relative;
+            .thirdImg{
+                position: absolute;
+                top: 5.8rem;
+                left: 0;
+            }
+            .SLSCText{
+                display: flex;
+                flex-direction: column;
+                width: 37.6rem;
+                position: absolute;
+                top: 35.1rem;
+                left: 2rem;
+            }
+        }
+    
+        .SRSContent{
+            grid-area: srs;
+            position: relative;
+            background: linear-gradient(0deg, #F7F7F7 0%, #FDFBFB 100%);
+            width: 84.8rem;
+            height: 53rem;
+            border-radius: 30px;
+            .fourthImg{
+                position: absolute;
+                top: 3.7rem;
+                left: 12.609rem;
+            }
+            .SRSCText{
+                position: absolute;
+                display: flex; 
+                flex-direction: column;
+                width: 46.6rem;
+                top: 44.3rem;
+                left: 2rem;
+            }
+        }       
+    }
+}
+
+
+//QUESTIONS
+.questions{
+    border-radius: 3rem;
+    width: 124rem;
+    background: linear-gradient(360deg, #F7F7F7 0%, #FDFBFB 100%);
+    padding: 2rem;
+    details{
+        appearance: none;
+        position: relative;
+        padding: 2rem 0;
+        transition: all .4s ease-in-out;
+        max-height: 3rem;
+        overflow: hidden;
+        span{
+            font-size: 24px;
+            font-family: Inter;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #191919;
+            font-weight: 500;
+        }
+        .arrow{
+            transition: all .4s ease-in-out;
+            transform: rotate(90deg);
+        }
+        summary{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3rem;
+            cursor: pointer;
+        }
+        summary::-webkit-details-marker{
+            display: none;
+        }
+        p{
+            margin-top: 24px;
+            position: relative;
+        }
+    
+    
+        &::before{
+            content: "";
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            background-color: #DCDCDC;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        &::after{
+            content: "";
+            height: 0.01rem;
+            width: 100%;
+            position: absolute;
+            background-color: #DCDCDC;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        &:first-of-type{
+            &::before{
+                display: none;
+            }
+        }
+        &:last-of-type{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    details[open]{
+        max-height: 50rem;
+        .arrow{
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+
+//MORE QUESTIONS
+.SocialMediaContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .SMCItem{
+        display: flex;
+        width: 20rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .imageContainer{
+            width: 9rem;
+            height: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.6rem;
+            background: linear-gradient(180deg, #FDFBFB 0%, #F7F7F7 100%);
+            margin-bottom: 2rem;
+        }
+        h3{
+            text-align: center;
+        }
+        .text-link{
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.02em;
+            color: #FF6900;
+            position: relative;
+            &::after{
+                content: '';
+                transition: all .4s ease-in-out;
+                position: absolute;
+                left: 50%;
+                height: 0.01rem;
+                width: 0%;
+                bottom: -.5rem;
+                background-color: #FF6900;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                    z-index: 1;    
+                }
+            }
+        }
+    }
+}
+
+
+//FIND PSYCHOLOGIST
+.backgroundImage{
+    position: relative;
+    img{
+        border-radius: 3rem;
+    }
+    .btn-container{
+        position: absolute;
+        top: 175px;
+        left: 201px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-align: center;
+            max-width: 89.7rem;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+
+//EXTRA HELP
+.helpMainContent{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    .helpLeftSide{
+        width: 47rem;
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+    .helpMiddleSide{
+        width: 30.8rem;
+        .ContactItem{
+            margin-bottom: 1.6rem;
+            h3{
+                color: #FF6900;
+                font-family: Manrope;
+            }
+        }  
+    }
+    .helpRightSide{
+        width: 30.8rem;
+        .ContactItem{
+            margin-bottom: 1.6rem;
+            h3{
+                color: #FF6900;
+                font-family: Manrope;
+            }
+        }  
+    }
+}
+
+
+//FOOTER
+
+.footerContent{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    .footerLeft{
+        display: flex;
+        gap: 5.94px;
+        img{
+            width: 3.147rem;
+            height: 3.147rem;
+        }
+        p{
+            margin-top: 6.3px;
+            font-family: MV-crooker;
+            font-weight: 400;
+            font-size: 2.343rem;
+            line-height: 2.28rem;
+            color: #FB812C;
+        }
+    }
+    .footerRight{
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+        grid-gap: 3.8rem;
+        .socialMedia{
+            display: flex;
+            flex-direction: column;
+            h3{
+                width: 17.8rem;
+            }
+            a{  
+                text-decoration: none;
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                letter-spacing: -0.02em;
+                color: #4D4D4D;
+                margin-bottom: 1.2rem;
+            }
+        }
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            h3{
+                width: 17.8rem;
+            }
+            a{  
+                text-decoration: none;
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                letter-spacing: -0.02em;
+                color: #4D4D4D;
+                margin-bottom: 1.2rem;
+            }
+        }
+        .other{
+            display: flex;
+            flex-direction: column;
+            h3{
+                width: 17.8rem;
+            }
+            a{  
+                text-decoration: none;
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                letter-spacing: -0.02em;
+                color: #4D4D4D;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+.footerFooter{
+    display: flex;
+    justify-content: space-between;
+    .conditions{
+        width: 52.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+        a{
+            color: #191919;
+        }
+    }
+    .copyright{
+        font-size: 1.6rem;
+    }
+}
+
+
+//MEDIA QUERY
+@media screen and (max-width: 768px){
+    p{
+        font-size: 16px !important;
+    }
+    .HTSContainer{
+        grid-template-areas: "ls ls"
+                             "rs sls"
+                             "srs srs" !important; 
+        .LSContent{
+            width: 688px;
+            overflow: hidden;
+            img{
+                &:first-of-type{
+                    width: 100%;
+                    height: 550px;
+                }
+            }
+            .firstImg{
+                top: 46px;
+                left: 65px;
+            }
+            .LSCText{
+                width: 547px;
+                top: 387px;
+            }
+        }
+        .RSContent{
+            width: 336px;
+            height: 513px;
+            overflow: hidden;
+            img{
+                &:first-of-type{
+                    width: 100%;
+                    height:  560px;
+                }
+            }
+            .secondImg{
+                width: 100%;
+                height: 230px;
+                top: 94.5px;
+            }
+            .RSCText{
+                top: 371px;
+                width: 296px;
+            }
+        }
+        .SLSContent{
+            width: 336px;
+            height: 504px;
+            overflow: hidden;
+            img{
+                &:first-of-type{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .thirdImg{
+                top: 100px;
+                width: 100%;
+            }
+            .SLSCText{
+                width: 296px;
+                top: 342px;
+                left: 20px;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .SRSContent{
+            width: 688px;
+            height: 472px;
+            background: linear-gradient(0deg, #FDFBFB 0%, #F7F7F7 100%) !important;
+
+
+            img{
+                width: 485.58px;
+                height: 280px;
+                top: 53px;
+                left: 155px;
+            }
+            .SRSCText{
+                top: 385px;
+                width: 632px;
+            }
+        }
+    }
+
+
+    .questions{
+        width: 68.8rem !important;
+        details{
+            width: 64.8rem !important;
+            max-height: 6rem;
+            padding-right: 1rem;
+            summary{
+                display: flex !important;
+                justify-content: space-between;
+                height: 6rem !important;
+                align-items: center;
+                span{
+                    &:first-of-type{
+                        padding-right: 5px;
+                    }
+                }
+                .arrow{
+                    transform-origin: center;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        details[open]{
+            max-height: 500px;
+            summary{
+                .arrow{
+                    transform-origin: center;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+
+
+    .SocialMediaContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.6rem;
+        row-gap: 4rem;
+        .SMCItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 33.6rem;
+            h3{
+                width: 100%;
+            }
+            a{
+                width: 100%;
+                text-align: center;
+                &:hover{
+                    display: none;
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .backgroundImage{
+        height: 520px !important;
+        img{
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+        }
+        .btn-container{
+            width: 643px !important;
+            height: 141px !important;
+            top: 189.5px !important;
+            left: 22px !important;
+        }
+    }
+
+
+    .helpMainContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        .helpLeftSide{
+            margin-bottom: 24px !important;
+        }
+        .helpMiddleSide{
+            display: flex; 
+            gap: 16px;
+            width: 668px !important;
+            margin-bottom: 16px;
+            .ContactItem{
+                width: 335px !important;
+            }
+        }
+        .helpRightSide{
+            display: flex; 
+            gap: 16px;
+            width: 668px !important;
+            .ContactItem{
+                width: 335px !important;
+            }
+        }
+    } 
+    
+    
+    .footerContent{
+        grid-template-columns: 1fr 1.75fr;
+        .footerLeft{
+            width: 176px;
+        }
+        .footerRight{
+            grid-gap: 1.6rem;
+            h3{
+                font-size: 2rem;
+            }
+            .socialMedia{
+                width: 160px !important;
+            }
+            .navigation{
+                width: 160px !important;
+            }
+            .other{
+                width: 160px !important;
+            }
+        }
+        
+    }
+    .footerFooter{
+        .conditions{
+            font-size: 1.4rem !important;
+            font-weight: 400;
+            a{
+                font-weight: 400;
+                font-size: 1.4rem !important;
+            }
+        }
+        .copyright{
+            font-size: 14px !important;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    h3{
+        font-size: 20px;
+    }
+
+
+    #HowToStart{
+        overflow: hidden;
+    }
+    .HTSContainer{
+        display: flex !important;
+        gap: 0 !important;
+        flex-direction: row;
+        .HTSC-block{
+            overflow: hidden;
+            flex-shrink: 0;
+            position: static !important;
+            height: 472px !important;
+            border-radius: 16px;
+            background: linear-gradient(180deg, #FDFBFB 0%, #F7F7F7 100%) !important;
+            img{
+                &:first-of-type{
+                    display: none;
+                }
+            }
+            &:last-child{
+                img{
+                    display: block;
+                }
+            }
+            .firstImg, .secondImg, .thirdImg, .fourthImg{
+                position: static !important;
+                width: 100%;
+            }
+            .LSCText, .RSCText, .SLSCText, .SRSCText{
+                margin-top: 14px;
+                position: static !important;
+                width: 225px !important;
+                padding: 14px 20px 20px 20px;
+                h3{
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #000;
+                    height: 50px !important;
+                    margin: 0;
+                }
+                p{
+                    line-height: 20px;
+                    color: #4d4d4d;
+                }
+            }
+            .SLSCText{
+                h3{
+                    text-align: left !important;
+                }
+                p{
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+
+
+    .questions{
+        width: 280px !important;
+        details{
+            width: 100% !important;
+            max-height: 100px;
+            summary{
+                height: 100px !important;
+                span{
+                    &:first-of-type{
+                        padding-right: 24px;
+                    }
+                }
+            }
+        }
+        details[open]{
+            max-height: 550px;
+        }
+     }
+
+
+     .SocialMediaContainer{
+        width: 100%; 
+        .SMCItem{
+            width: 155px;
+            h3{
+                height: auto;
+            }
+            a{
+                font-size: 20px !important;
+            }
+        }
+     }
+
+
+     .backgroundImage{
+        width: 100%;
+        height: 520px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .btn-container{
+            width: 240px !important;
+        }
+     }
+
+
+     .helpMainContent{
+        grid-template-columns: 1fr;
+        .helpMiddleSide{
+            flex-direction: column;
+            .ContactItem{
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+        .helpRightSide{
+            flex-direction: column;
+            .ContactItem{
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+     }
+
+
+     .footerContent{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-bottom: 32px;
+        .footerLeft{
+            margin-bottom: 34px;
+        }
+        .footerRight{
+            grid-template-columns: repeat(2, 1fr);
+        }
+     }
+     .footerFooter{
+        flex-direction: column;
+        align-items: center;
+        .conditions{
+            width: 320px !important;
+            text-align: center;
+        }
+        .copyright{
+            font-size: 1.4rem !important;
+        }
+     }
+}

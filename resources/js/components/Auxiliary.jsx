@@ -1,0 +1,1 @@
+export const ActionType = 'PickDoctor' | 'Auth' | 'SubSelfHelp';

@@ -1,0 +1,216 @@
+body {
+    background: #FFFFFF;
+}
+
+.design__a {
+    .lk-container {
+        padding: 3.8rem 4.4rem;
+        display: flex;
+        flex-direction: row;
+
+        .lk-sidebar {
+            width: 100%;
+            max-width: 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 3.6rem;
+
+            .tabs {
+                display: flex;
+                flex-direction: column;
+
+                .tab-line {
+                    width: 2px;
+                    height: 4.8rem;
+                    background: none;
+                    margin-left: 6.5px;
+                }
+
+                .tab-item {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 3.6rem;
+                    position: relative;
+                    height: 0;
+
+                    &.tab-behind {
+                        color: rgba($color: #ff6900, $alpha: 0.72) !important;
+                        font-weight: 500 !important;
+
+                        & + .tab-line {
+                            background: #FB812C;
+                        }
+
+                        &::before {
+                            background: #FB812C !important;
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        border-radius: 1.6rem;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        left: 0;
+                    }
+
+                    &.tab-focused {
+                        color: rgba($color: #ff6900, $alpha: 1);
+                        font-weight: 500;
+
+                        &::before {
+                            background: #FB812C;
+                        }
+                    }
+
+                    &:not(.tab-focused) {
+                        color: #BABABA;
+                        font-weight: 600;
+
+                        &::before {
+                            background: #E9E9E9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .discuss-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 2rem;
+            gap: 6px;
+            user-select: none;
+
+            .discuss-explanation {
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                color: #BABABA;
+                gap: 4px;
+                padding: 0.6rem 1.2rem;
+            }
+
+            .discuss-option {
+                font-weight: 500;
+                color: var(--text-def-dark);
+                padding: 0.6rem 1.2rem;
+                background: var(--light-bg);
+                border-radius: 55px;
+                cursor: pointer;
+
+                &[active] {
+                    background: var(--accent);
+                    color: #fff;
+                }
+            }
+        }
+
+        .price-list {
+            display: flex;
+            flex-direction: column;
+            background: var(--light-bg);
+            border-radius: 2.4rem;
+            padding: 4px;
+            box-sizing: border-box;
+            gap: 4px;
+
+            .price-item {
+                background: #fff;
+                border-radius: 2rem;
+                padding: 2.4rem;
+                user-select: none;
+                display: flex;
+                flex-direction: row;
+                gap: 1.6rem;
+
+                .pi-wrap {
+                    &:nth-of-type(2) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.2rem;
+                        font-size: 2rem;
+                    }
+                    
+                    .pi-price-from {
+                        font-weight: 600;
+                        color: var(--text-def-dark);
+                    }
+
+                    .pi-exp {
+                        color: #BABABA;
+                        font-weight: 600;
+                        margin-left: 1.2rem;
+                    }
+
+                    .pi-experts {
+                        color: #BABABA;
+                        margin-left: auto;
+                    }
+                    
+                    p {
+                        color: var(--text-def-dark);
+                        font-weight: 500;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+
+        .lk-content {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .tab-content {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem;
+                width: 100%;
+
+                .input-underlabel {
+                    margin-left: 2.2rem;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin-top: 1.2rem;
+                }
+
+                .thexp-row {
+                    font-size: 2.4rem;
+                    font-weight: 500;
+
+                    input[type="radio"] {
+                        display: none;
+
+                        &:checked + label {
+                            background: var(--accent);
+                            color: #fff;
+                        }
+                    }
+
+                    label {
+                        font-size: 2rem;
+                        padding: 6px 12px;
+                        background: var(--light-bg);
+                        border-radius: 55px;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                }
+                
+                &:not(.tab-focused) {
+                    top: -100%;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

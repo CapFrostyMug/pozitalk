@@ -1,0 +1,119 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+@font-face {
+    font-family: 'MV-crooker';
+    src: url('../fonts/MV-crooker.otf');
+    font-style: normal;
+    font-variant: normal;
+    font-optical-sizing: auto;
+}
+
+// Variables
+@import 'variables';
+
+// Interface
+@import 'ui';
+
+// HTML
+html {
+    font-size: var(--base-html-scale);
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 991px) and (min-width: 565px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 564px) and (min-width: 321px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 320px) and (min-width: 261px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+// Resetting the default styles
+h1,h2,h3,h4,h5,h6,p,label {
+    margin: 0;
+    color: var(--text-def-dark);
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 6rem;
+    font-family: 'MV-crooker';
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 400;
+    font-family: 'MV-crooker';
+    max-width: 76rem;
+}
+
+a { text-underline-offset: 0.6rem; }
+
+// Body
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--body-bg);
+    font-family: 'Inter', sans-serif;
+}
+
+input, textarea, button {
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--view-container-pad);
+
+    .content {
+        width: 100%;
+        max-width: var(--content-max-width);
+        display: flex;
+        flex-direction: column;
+    }
+
+        &:not(#banner) {
+            padding-top: 11rem;
+            background: #fff;
+
+            .content { gap: var(--content-gap); }
+        }
+
+        &#helpVariants, &#workConditions { border-radius: 10rem 10rem 0 0; }
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+
+    &.wrap { flex-wrap: wrap; }
+    &.row { flex-direction: row; }
+    &.col { flex-direction: column; }
+    &.ai-c { align-items: center; }
+    &.jc-c { justify-content: center; }
+    &.jc-sb { justify-content: space-between; }
+    &.jc-sa { justify-content: space-around; }
+}

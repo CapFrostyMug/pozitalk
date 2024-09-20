@@ -1,0 +1,139 @@
+{
+  "_CompanyLogo-!~{009}~.js": {
+    "file": "assets/CompanyLogo-BigbjokC.css",
+    "src": "_CompanyLogo-!~{009}~.js"
+  },
+  "_CompanyLogo-BOpOY0gp.js": {
+    "file": "assets/CompanyLogo-BOpOY0gp.js",
+    "name": "CompanyLogo",
+    "css": [
+      "assets/CompanyLogo-BigbjokC.css"
+    ],
+    "assets": [
+      "assets/MV-crooker-ImxpymkJ.otf"
+    ]
+  },
+  "_Icon-Cs85Akx3.js": {
+    "file": "assets/Icon-Cs85Akx3.js",
+    "name": "Icon",
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js"
+    ]
+  },
+  "_style_b-!~{00a}~.js": {
+    "file": "assets/style_b-D1j4Fz-H.css",
+    "src": "_style_b-!~{00a}~.js"
+  },
+  "_swiper-core-nEFrkvsQ.js": {
+    "file": "assets/swiper-core-nEFrkvsQ.js",
+    "name": "swiper-core",
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DxkFTwjz.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/MV-crooker.otf": {
+    "file": "assets/MV-crooker-ImxpymkJ.otf",
+    "src": "resources/fonts/MV-crooker.otf"
+  },
+  "resources/js/pages/gift/app.js": {
+    "file": "assets/app-BPItyAyk.js",
+    "name": "app",
+    "src": "resources/js/pages/gift/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/app-Bh5D2_eW.css"
+    ]
+  },
+  "resources/js/pages/knowledge/app.js": {
+    "file": "assets/app-Csg6sP4v.js",
+    "name": "app",
+    "src": "resources/js/pages/knowledge/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/app-DrmzTlP3.css"
+    ]
+  },
+  "resources/js/pages/lk/app.js": {
+    "file": "assets/app-Cbtsux4w.js",
+    "name": "app",
+    "src": "resources/js/pages/lk/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/app-CQXjfay1.css"
+    ]
+  },
+  "resources/js/pages/psy/app.js": {
+    "file": "assets/app-CmNIiNIW.js",
+    "name": "app",
+    "src": "resources/js/pages/psy/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/style_b-D1j4Fz-H.css"
+    ]
+  },
+  "resources/js/pages/test/app.js": {
+    "file": "assets/app-CQUTjcBN.js",
+    "name": "app",
+    "src": "resources/js/pages/test/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js"
+    ],
+    "css": [
+      "assets/app-BjZWlhxt.css"
+    ]
+  },
+  "resources/js/pages/tests/app.js": {
+    "file": "assets/app-Cf1nijqq.js",
+    "name": "app",
+    "src": "resources/js/pages/tests/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/app-CdyOgoU_.css"
+    ]
+  },
+  "resources/js/pages/welcome/app.js": {
+    "file": "assets/app-Cx4gBpwA.js",
+    "name": "app",
+    "src": "resources/js/pages/welcome/app.js",
+    "isEntry": true,
+    "imports": [
+      "_CompanyLogo-BOpOY0gp.js",
+      "_swiper-core-nEFrkvsQ.js",
+      "_Icon-Cs85Akx3.js"
+    ],
+    "css": [
+      "assets/style_b-D1j4Fz-H.css"
+    ]
+  }
+}
